@@ -1,0 +1,152 @@
+/* RESETS */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+
+html,
+body {
+  font-size: 62.5%;
+  font-family: "Inter", sans-serif;
+  height: 100%;
+  line-height: 1;
+  font-weight: 400;
+  color: #555;
+}
+
+/*******************************/
+/* GENERAL REUSABLE COMPONENTS */
+/*******************************/
+
+.heading-primary,
+.heading-secondary {
+  font-weight: 700;
+  color: #ccd1d7;
+  letter-spacing: -0.1rem;
+}
+
+.heading-primary {
+  font-size: 5.2rem;
+  line-height: 1.05;
+  margin-bottom: 3.2rem;
+}
+
+.heading-secondary {
+  font-size: 4.4rem;
+  line-height: 1.2;
+  margin-bottom: 9.6rem;
+}
+
+.sub-heading {
+  display: block;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #0c1017;
+  text-transform: uppercase;
+  letter-spacing: 1rem;
+  margin-bottom: 1.4rem;
+  background-color: #d4d7db;
+  padding: 1rem;
+}
+
+.heading-tertiary {
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 3.2rem;
+  font-weight: 700;
+  color: #ccd1d7;
+}
+
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  font-size: 2rem;
+  font-weight: 500;
+  text-decoration: none;
+  padding: 1.6rem 3.2rem;
+  border-radius: 3.5rem;
+
+  transition: all 0.5s;
+}
+
+.btn--full:link,
+.btn--full:visited {
+  background-color: #939ba6;
+  color: #000000;
+}
+
+.btn--full:hover,
+.btn--full:active {
+  background-color: #a9afb8;
+  color: #10161f;
+}
+
+.btn--outline:link,
+.btn--outline:visited {
+  background-color: #525f71;
+  color: #e9ebed;
+}
+
+.btn--outline:hover,
+.btn--outline:active {
+  background-color: #0c1017;
+  /* border: 1px solid #fff; */
+  color: #e9ebed;
+  /* Trick */
+  box-shadow: inset 0 0 0 2px #fff;
+}
+
+.margin-right-sm {
+  margin-right: 1rem !important;
+}
+
+.btn {
+	border-radius: 50px;
+	padding: 1rem 4rem;
+	font-size: 1.7rem;
+	margin: 0 1rem;
+	font-weight: 400;
+    text-align: center;
+	transition: all 150ms ease-in-out;
+}
+
+.solid-btn {
+	background: #7d8794;
+	color: rgb(245, 245, 245);
+}
+
+.solid-btn:hover {
+	background: #27374d;
+}
+
+.grid {
+    display: grid;
+    column-gap: 5.4rem;
+    row-gap: 9.6rem;
+
+   
+  }
+  
+  .grid--2-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  
+  .grid--3-cols {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .grid--4-cols {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .grid--center--vertically {
+    align-items: center;
+  }
